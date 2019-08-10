@@ -46,7 +46,7 @@ const Reveal = window.Reveal = require('reveal.js/js/reveal');
 
                 video.onended = () => {
                     $(ele).removeClass('playing');
-                    $(video).animate({ opacity: '1' });
+                    $(video).animate({ opacity: '0.75' });
                     video.onpause = void(0);
                     video.onplay = void(0);
                     $('p', ele).off('mouseenter', enter);
