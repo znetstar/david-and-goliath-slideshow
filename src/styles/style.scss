@@ -21,12 +21,20 @@ body, section, h1, h2, h3, h4, h5, h6 {
             padding: 25px;
         }
 
+
+        &.playing {
+            p {
+                opacity: 0.15;
+            }
+        }
+
         &.text {
             p {
                 color: black;
                 background: none;
                 border-radius: unset;
                 padding: unset;
+                
             }
         }
         
