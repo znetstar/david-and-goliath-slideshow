@@ -1,0 +1,39 @@
+@import "./normalize.scss";
+@import "../../node_modules/reveal.js/css/reveal.scss";
+@import "../../node_modules/reveal.js/css/theme/source/white.scss";
+
+body, section, h1, h2, h3, h4, h5, h6 {
+    font-family: 'EB Garamond', serif !important;
+}
+
+
+
+.slides {
+    &.full {
+        width: 100% !important;
+    }
+    
+    section {
+        p {
+            color: white;
+            background: rgba(0,0,0,.25);
+            border-radius: 15px;
+            padding: 25px;
+        }
+
+        &.text {
+            p {
+                color: black;
+                background: none;
+                border-radius: unset;
+                padding: unset;
+            }
+        }
+        
+        &#ref {
+            .csl-bib-body {
+                font-size: .75em;
+            }
+        }
+    }
+}
