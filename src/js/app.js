@@ -17,6 +17,9 @@ const Reveal = window.Reveal = require('reveal.js/js/reveal');
             $('.slides').removeClass('full');
         }
 
+        if ($('video').length)
+            $('video').each(function () { this.pause(); })
+
         setTimeout(() => {
             const video = $('.slide-background.present video')[0];
             if (video) {
